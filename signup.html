@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake View </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container1">
+        <img src="image/tree.png" alt="" id="i">
+        <h1>Lake View Cafeteria</h1>
+
+    </div>
+
+    <div id="container2">
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Meal</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="sinlog">
+        <h2>Registration</h2>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your name" required id="name" name="name" autocomplete="off">
+
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your email" required id="mail" name="mail" autocomplete="off">
+
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Create password" required id="pass" name="" autocomplete="off">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm password" required id="cnf" name="" autocomplete="off">
+            </div>
+            <div class="radiobut">
+                <h3> Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Female
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender">
+                </h3>
+            </div>
+            <div class="policy">
+                <input type="checkbox" id="" name="">
+                <h3>I accept all terms & condition</h3>
+            </div>
+            <div class="input-box button">
+                <input type="Submit" value="Register Now" id="" name="" onclick="validation()">
+            </div>
+
+            <div class="text">
+                <h3>Already have an account? <a href="#">Login now</a></h3>
+            </div>
+        </form>
+    </div>
+    <div style="height: 1000px;">
+
+    </div>
+    -->
+    <script>
+        function validation() {
+            let name = document.getElementById("name").value;
+            let mail = document.getElementById("mail").value;
+            let pass = document.getElementById("pass").value;
+            let cnf = document.getElementById("cnf").value;
+            if (name == "") {
+                alert("Enter Valid Name");
+                return false;
+            }
+            if (mail == "") {
+                alert("Enter Valid E-mail");
+                return false;
+            }
+            if (pass != cnf) {
+                alert("Confirm Password Not Matched");
+                return false;
+            }
+
+        }
+    </script>
+    <!-- 
+    <div>
+        <h1 id="formhead">Sign Up</h1>
+        <form method="get" action="login.html">
+            <table align="center">
+                <label for="first">First Name</label>
+                <tr>
+                    <td><input type="text" name="Text" id="first"></td>
+                </tr>
+                <label for="second">Last Name</label>
+                <tr>
+                    <td><input type="text" name="Text" id="second"></td>
+                </tr>
+                <label for="first">Email</label>
+                <tr>
+                    <td><input type="text" name="Text" id="first"></td>
+                </tr>
+                <label for="first">Phone Number</label>
+                <tr>
+                    <td><input type="text" name="Text" id="first"></td>
+                </tr>
+                <label for="first">Password</label>
+                <tr>
+                    <td><input type="text" name="Text" id="first"></td>
+                </tr>
+                <label for="first">Confirm Password</label>
+                <tr>
+                    <td><input type="text" name="Text" id="first"></td>
+                </tr>
+                <label for="first">Confirm Password</label>
+                <tr>
+                    <td> Male<input type="radio" name="Gender" id="first">Female<input type="radio" name="Gender"
+                            id="first"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <input type="button" value="Sign Up"></td>
+                </tr>
+
+
+            </table>
+
+        </form>
+    </div>
+    <div id="imgtxt">
+        <h2>Our Special Meal</h2>
+        <br>
+        <p>Enjoy Unlimited Daal Baati only in 120 Rupess. </p>
+
+    </div>
+    <div id="image">
+
+        <img src="https://thumbs.dreamstime.com/b/rajasthani-traditional-cuisine-dal-baati-rajasthani-traditional-cuisine-dal-baati-also-know-as-dal-bati-daal-baati-churma-194150881.jpg"
+            alt="">
+    </div>
+</body>
+
+</html>
